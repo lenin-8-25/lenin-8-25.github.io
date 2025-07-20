@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenin Sai Kande - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%; /* Adjust width as needed */
+            height: 3px;
+            background-color: #6366f1; /* Indigo color for underline */
+            border-radius: 9999px; /* Rounded corners for the underline */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#" class="text-2xl font-bold text-indigo-600">Lenin Sai Kande</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <!-- Navigation Links -->
+            <div id="nav-links" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0">
+                <a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium py-2 px-3 rounded-md transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium py-2 px-3 rounded-md transition duration-300 ease-in-out">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium py-2 px-3 rounded-md transition duration-300 ease-in-out">Projects</a>
+                <a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium py-2 px-3 rounded-md transition duration-300 ease-in-out">Skills</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium py-2 px-3 rounded-md transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-4 flex items-center justify-center min-h-screen rounded-b-xl shadow-lg">
+        <div class="container mx-auto text-center">
+            <img src="https://placehold.co/150x150/6366f1/ffffff?text=LSK" alt="Lenin Sai Kande" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                Hi, I'm <span class="text-yellow-300">Lenin Sai Kande</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in-up">
+                Electronics & Communication Engineer | Digital Systems & Full-Stack Developer
+            </p>
+            <a href="#projects" class="bg-white text-indigo-600 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white rounded-xl shadow-md mx-4 md:mx-auto max-w-4xl -mt-16 relative z-10 mb-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center section-heading">About Me</h2>
+            <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                <p>I recently graduated with a B. Tech in Electronics and Communication Engineering from Dr BR Ambedkar National Institute of Technology, Jalandhar. I'm proud to have been ranked among the top 12 students in my branch. My background is a mix of hardware and software, with a strong foundation in digital system design and full-stack development.</p>
+                <p>On the hardware side, I've designed and implemented projects like a 4-bit Arithmetic Logic Unit (ALU) using Verilog and Xilinx Vivado and a Multi-Input Multi-Output Finite State Machine (FSM) for turnstile control. I also have experience with the I2C protocol for efficient data transfer between integrated circuits.</p>
+                <p>I also have experience as a Frontend Developer Intern at MetaCraftlab, where I gained proficiency in web development and version control. One of my key projects was building a full-stack marketplace, "F2C," for farmers to sell directly to consumers. I used React.js for the frontend, Express.js for the backend, and MongoDB as the database.</p>
+                <p>I'm passionate about creating efficient and scalable solutions, and I'm excited to apply my skills in digital design, embedded systems, or full-stack development to contribute to innovative projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 bg-gray-50 rounded-xl shadow-md mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">F2C, Farmers to Consumers</h3>
+                    <p class="text-gray-700 mb-4">A marketplace for farmers to sell crops directly to consumers, eliminating middlemen and increasing farmer profits.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech Stack: React.js, Express.js, MongoDB</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-medium">Learn More &rarr;</a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">4-bit Arithmetic Logic Unit (ALU)</h3>
+                    <p class="text-gray-700 mb-4">Designed and implemented a 4-bit ALU using Verilog for a simple processor, supporting various arithmetic and logic operations.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech Stack: Verilog, Xilinx Vivado, FPGA</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-medium">Learn More &rarr;</a>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">MIMO-based Turnstile Control</h3>
+                    <p class="text-gray-700 mb-4">Designed and implemented a Multi-Input Multi-Output Finite State Machine (FSM) for a universal transport house, managing passenger verification and turnstile control.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech Stack: Verilog, Digital System Design, Xilinx Vivado</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-medium">Learn More &rarr;</a>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 ease-in-out border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">IoT Home Automation project</h3>
+                    <p class="text-gray-700 mb-4">Built a Home Automation system to easily control home appliances via mobile, focusing on interactive and user-friendly interfaces.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech Stack: Node-Red, Arduino, C++</p>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 font-medium">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 bg-white rounded-xl shadow-md mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center section-heading">My Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Skill Tag 1 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Verilog</span>
+                <!-- Skill Tag 2 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Digital System Design</span>
+                <!-- Skill Tag 3 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Full-Stack Development</span>
+                <!-- Skill Tag 4 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">React.js</span>
+                <!-- Skill Tag 5 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Node.js</span>
+                <!-- Skill Tag 6 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">MongoDB</span>
+                <!-- Skill Tag 7 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">C Programming</span>
+                <!-- Skill Tag 8 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">SystemVerilog</span>
+                <!-- Skill Tag 9 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Python</span>
+                <!-- Skill Tag 10 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Xilinx Vivado</span>
+                <!-- Skill Tag 11 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">FPGA</span>
+                <!-- Skill Tag 12 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Node-Red</span>
+                <!-- Skill Tag 13 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Arduino</span>
+                <!-- Skill Tag 14 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">Svelte</span>
+                <!-- Skill Tag 15 -->
+                <span class="bg-indigo-100 text-indigo-800 text-lg font-medium px-4 py-2 rounded-full shadow-sm">SvelteKit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gray-50 rounded-xl shadow-md mx-4 md:mx-auto max-w-4xl mb-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center section-heading">Get in Touch</h2>
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                <p class="text-center text-gray-700 mb-6">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-md focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 text-center text-gray-600">
+                    <p>Or connect with me directly:</p>
+                    <p class="mt-2">Email: <a href="mailto:leninsai825@gmail.com" class="text-indigo-600 hover:underline">leninsai825@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/lenin-sai-kande-b4942a230/" target="_blank" class="text-indigo-600 hover:underline">lenin-sai-kande-b4942a230</a></p>
+                    <p>Phone: <a href="tel:+918247216940" class="text-indigo-600 hover:underline">8247216940</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-4 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Lenin Sai Kande. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('nav-links');
+                if (mobileMenu.classList.contains('flex')) {
+                    mobileMenu.classList.remove('flex');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col'); // Ensure it stacks vertically on mobile
+        });
+    </script>
+</body>
+</html>
